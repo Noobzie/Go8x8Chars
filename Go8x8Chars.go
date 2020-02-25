@@ -2,6 +2,63 @@ package Go8x8Chars
 
 // Functions starting with an C are Capital letters, S Small letters
 
+func ConvertToSlice(text string) [][][]int {
+	var matrixLetters [][][]int
+	for i := 0; i < len(text); i++ {
+		switch text[i] {
+		case 'A':
+			A := [][]int{
+				{0, 0, 0, 1, 1, 0, 0, 0},
+				{0, 0, 1, 0, 0, 1, 0, 0},
+				{0, 1, 0, 0, 0, 0, 1, 0},
+				{0, 1, 0, 0, 0, 0, 1, 0},
+				{0, 1, 1, 1, 1, 1, 1, 0},
+				{0, 1, 0, 0, 0, 0, 1, 0},
+				{0, 1, 0, 0, 0, 0, 1, 0},
+				{1, 1, 1, 0, 0, 1, 1, 1},
+			}
+			matrixLetters = append(matrixLetters, A)
+		case 'B':
+			B := [][]int{
+				{1, 1, 1, 1, 1, 1, 0, 0},
+				{0, 1, 0, 0, 0, 0, 1, 0},
+				{0, 1, 0, 0, 0, 1, 0, 0},
+				{0, 1, 1, 1, 1, 1, 1, 0},
+				{0, 1, 0, 0, 0, 0, 0, 1},
+				{0, 1, 0, 0, 0, 0, 0, 1},
+				{0, 1, 0, 0, 0, 0, 0, 1},
+				{1, 1, 1, 1, 1, 1, 1, 0},
+			}
+			matrixLetters = append(matrixLetters, B)
+		case 'C':
+			C := [][]int{
+				{0, 0, 1, 1, 1, 1, 0, 1},
+				{0, 1, 0, 0, 0, 0, 1, 1},
+				{1, 0, 0, 0, 0, 0, 0, 1},
+				{1, 0, 0, 0, 0, 0, 0, 0},
+				{1, 0, 0, 0, 0, 0, 0, 0},
+				{1, 0, 0, 0, 0, 0, 0, 1},
+				{0, 1, 0, 0, 0, 0, 1, 1},
+				{0, 0, 1, 1, 1, 1, 0, 1},
+			}
+			matrixLetters = append(matrixLetters, C)
+		case 'D':
+			D := [][]int{
+				{1, 1, 1, 1, 1, 1, 0, 0},
+				{0, 1, 0, 0, 0, 0, 1, 0},
+				{0, 1, 0, 0, 0, 0, 0, 1},
+				{0, 1, 0, 0, 0, 0, 0, 1},
+				{0, 1, 0, 0, 0, 0, 0, 1},
+				{0, 1, 0, 0, 0, 0, 0, 1},
+				{0, 1, 0, 0, 0, 0, 1, 0},
+				{1, 1, 1, 1, 1, 1, 0, 0},
+			}
+			matrixLetters = append(matrixLetters, D)
+		}
+	}
+	return matrixLetters
+}
+
 func CA() [][]int {
 	A := [][]int{
 		{0, 0, 0, 1, 1, 0, 0, 0},
