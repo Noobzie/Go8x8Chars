@@ -1,8 +1,88 @@
 package Go8x8Chars
 
-// Functions starting with an C are Capital letters, S Small letters
+// Functions starting with c are Capital letters, s Small letters
 
-func CA() [][]int {
+// GetCharacter returns teh character corresponding to the char string.
+func GetCharacter(char string) [][]int {
+	switch char {
+	case "A":
+		return cA()
+	case "B":
+		return cB()
+	case "C":
+		return cC()
+	case "D":
+		return cD()
+	case "E":
+		return cE()
+	case "F":
+		return cF()
+	case "G":
+		return cG()
+	case "H":
+		return cH()
+	case "I":
+		return cI()
+	case "J":
+		return cJ()
+	case "K":
+		return cK()
+	case "L":
+		return cL()
+	case "M":
+		return cM()
+	case "N":
+		return cN()
+	case "O":
+		return cO()
+	case "P":
+		return cP()
+	case "Q":
+		return cQ()
+	case "R":
+		return cR()
+	case "S":
+		return cS()
+	case "T":
+		return cT()
+	case "U":
+		return cU()
+	case "V":
+		return cV()
+	case "W":
+		return cW()
+	case "X":
+		return cX()
+	case "Y":
+		return cY()
+	case "Z":
+		return cZ()
+	case "1":
+		return one()
+	case "2":
+		return two()
+	case "3":
+		return three()
+	case "4":
+		return four()
+	case "5":
+		return five()
+	case "6":
+		return six()
+	case "7":
+		return seven()
+	case "8":
+		return eight()
+	case "9":
+		return nine()
+	case "0":
+		return zero()
+	default:
+		return space()
+	}
+}
+
+func cA() [][]int {
 	A := [][]int{
 		{0, 0, 0, 1, 1, 0, 0, 0},
 		{0, 0, 1, 0, 0, 1, 0, 0},
@@ -16,7 +96,7 @@ func CA() [][]int {
 	return A
 }
 
-func CB() [][]int {
+func cB() [][]int {
 	B := [][]int{
 		{1, 1, 1, 1, 1, 1, 0, 0},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -30,7 +110,7 @@ func CB() [][]int {
 	return B
 }
 
-func CC() [][]int {
+func cC() [][]int {
 	C := [][]int{
 		{0, 0, 1, 1, 1, 1, 0, 1},
 		{0, 1, 0, 0, 0, 0, 1, 1},
@@ -44,7 +124,7 @@ func CC() [][]int {
 	return C
 }
 
-func CD() [][]int {
+func cD() [][]int {
 	D := [][]int{
 		{1, 1, 1, 1, 1, 1, 0, 0},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -58,7 +138,7 @@ func CD() [][]int {
 	return D
 }
 
-func CE() [][]int {
+func cE() [][]int {
 	E := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 0, 1},
@@ -72,7 +152,7 @@ func CE() [][]int {
 	return E
 }
 
-func CF() [][]int {
+func cF() [][]int {
 	F := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 0, 1},
@@ -86,7 +166,7 @@ func CF() [][]int {
 	return F
 }
 
-func CG() [][]int {
+func cG() [][]int {
 	G := [][]int{
 		{0, 0, 1, 1, 1, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 0, 1},
@@ -100,7 +180,7 @@ func CG() [][]int {
 	return G
 }
 
-func CH() [][]int {
+func cH() [][]int {
 	H := [][]int{
 		{1, 1, 1, 0, 0, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -114,7 +194,7 @@ func CH() [][]int {
 	return H
 }
 
-func CI() [][]int {
+func cI() [][]int {
 	I := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 0},
 		{0, 0, 0, 1, 0, 0, 0, 0},
@@ -128,7 +208,7 @@ func CI() [][]int {
 	return I
 }
 
-func CJ() [][]int {
+func cJ() [][]int {
 	J := [][]int{
 		{0, 0, 1, 1, 1, 1, 1, 0},
 		{0, 0, 0, 0, 0, 1, 0, 0},
@@ -142,7 +222,7 @@ func CJ() [][]int {
 	return J
 }
 
-func CK() [][]int {
+func cK() [][]int {
 	K := [][]int{
 		{1, 1, 1, 0, 1, 1, 1, 1},
 		{0, 1, 0, 0, 0, 1, 0, 0},
@@ -156,7 +236,7 @@ func CK() [][]int {
 	return K
 }
 
-func CL() [][]int {
+func cL() [][]int {
 	L := [][]int{
 		{1, 1, 1, 0, 0, 0, 0, 0},
 		{0, 1, 0, 0, 0, 0, 0, 0},
@@ -170,7 +250,7 @@ func CL() [][]int {
 	return L
 }
 
-func CM() [][]int {
+func cM() [][]int {
 	M := [][]int{
 		{1, 1, 0, 0, 0, 1, 1, 1},
 		{0, 1, 1, 0, 1, 0, 1, 0},
@@ -184,7 +264,7 @@ func CM() [][]int {
 	return M
 }
 
-func CN() [][]int {
+func cN() [][]int {
 	N := [][]int{
 		{1, 1, 0, 0, 0, 1, 1, 1},
 		{0, 1, 1, 0, 0, 0, 1, 0},
@@ -198,7 +278,7 @@ func CN() [][]int {
 	return N
 }
 
-func CO() [][]int {
+func cO() [][]int {
 	O := [][]int{
 		{0, 0, 1, 1, 1, 1, 0, 0},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -212,7 +292,7 @@ func CO() [][]int {
 	return O
 }
 
-func CP() [][]int {
+func cP() [][]int {
 	P := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 0},
 		{0, 1, 0, 0, 0, 0, 0, 1},
@@ -226,7 +306,7 @@ func CP() [][]int {
 	return P
 }
 
-func CQ() [][]int {
+func cQ() [][]int {
 	Q := [][]int{
 		{0, 1, 1, 1, 1, 1, 1, 0},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -240,7 +320,7 @@ func CQ() [][]int {
 	return Q
 }
 
-func CR() [][]int {
+func cR() [][]int {
 	R := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 0},
 		{0, 1, 0, 0, 0, 0, 0, 1},
@@ -254,7 +334,7 @@ func CR() [][]int {
 	return R
 }
 
-func CS() [][]int {
+func cS() [][]int {
 	S := [][]int{
 		{0, 1, 1, 1, 1, 1, 0, 1},
 		{1, 0, 0, 0, 0, 0, 1, 1},
@@ -268,7 +348,7 @@ func CS() [][]int {
 	return S
 }
 
-func CT() [][]int {
+func cT() [][]int {
 	T := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 1},
 		{1, 0, 0, 0, 1, 0, 0, 1},
@@ -282,7 +362,7 @@ func CT() [][]int {
 	return T
 }
 
-func CU() [][]int {
+func cU() [][]int {
 	U := [][]int{
 		{1, 1, 1, 0, 0, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -296,7 +376,7 @@ func CU() [][]int {
 	return U
 }
 
-func CV() [][]int {
+func cV() [][]int {
 	V := [][]int{
 		{1, 1, 1, 0, 0, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -310,7 +390,7 @@ func CV() [][]int {
 	return V
 }
 
-func CW() [][]int {
+func cW() [][]int {
 	W := [][]int{
 		{1, 1, 1, 0, 0, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -324,7 +404,7 @@ func CW() [][]int {
 	return W
 }
 
-func CX() [][]int {
+func cX() [][]int {
 	X := [][]int{
 		{1, 1, 1, 0, 0, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -338,7 +418,7 @@ func CX() [][]int {
 	return X
 }
 
-func CY() [][]int {
+func cY() [][]int {
 	Y := [][]int{
 		{1, 1, 1, 0, 0, 1, 1, 1},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -352,7 +432,7 @@ func CY() [][]int {
 	return Y
 }
 
-func CZ() [][]int {
+func cZ() [][]int {
 	Z := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 1},
 		{1, 0, 0, 0, 0, 0, 1, 0},
@@ -366,7 +446,7 @@ func CZ() [][]int {
 	return Z
 }
 
-func Zero() [][]int {
+func zero() [][]int {
 	zero := [][]int{
 		{0, 0, 1, 1, 1, 1, 0, 0},
 		{0, 1, 0, 0, 0, 0, 1, 0},
@@ -380,7 +460,7 @@ func Zero() [][]int {
 	return zero
 }
 
-func One() [][]int {
+func one() [][]int {
 	one := [][]int{
 		{0, 0, 1, 1, 0, 0, 0, 0},
 		{0, 1, 0, 1, 0, 0, 0, 0},
@@ -394,7 +474,7 @@ func One() [][]int {
 	return one
 }
 
-func Two() [][]int {
+func two() [][]int {
 	two := [][]int{
 		{0, 1, 1, 1, 1, 1, 1, 0},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -408,7 +488,7 @@ func Two() [][]int {
 	return two
 }
 
-func Three() [][]int {
+func three() [][]int {
 	three := [][]int{
 		{0, 1, 1, 1, 1, 1, 1, 0},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -422,7 +502,7 @@ func Three() [][]int {
 	return three
 }
 
-func Four() [][]int {
+func four() [][]int {
 	four := [][]int{
 		{0, 0, 0, 0, 0, 1, 1, 0},
 		{0, 0, 0, 0, 1, 0, 1, 0},
@@ -436,7 +516,7 @@ func Four() [][]int {
 	return four
 }
 
-func Five() [][]int {
+func five() [][]int {
 	five := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 1},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -450,7 +530,7 @@ func Five() [][]int {
 	return five
 }
 
-func Six() [][]int {
+func six() [][]int {
 	six := [][]int{
 		{0, 1, 1, 1, 1, 1, 1, 0},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -464,7 +544,7 @@ func Six() [][]int {
 	return six
 }
 
-func Seven() [][]int {
+func seven() [][]int {
 	seven := [][]int{
 		{1, 1, 1, 1, 1, 1, 1, 1},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -478,7 +558,7 @@ func Seven() [][]int {
 	return seven
 }
 
-func Eight() [][]int {
+func eight() [][]int {
 	eight := [][]int{
 		{0, 1, 1, 1, 1, 1, 1, 0},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -492,7 +572,7 @@ func Eight() [][]int {
 	return eight
 }
 
-func Nine() [][]int {
+func nine() [][]int {
 	nine := [][]int{
 		{0, 1, 1, 1, 1, 1, 1, 0},
 		{1, 0, 0, 0, 0, 0, 0, 1},
@@ -504,4 +584,18 @@ func Nine() [][]int {
 		{0, 1, 1, 1, 1, 1, 1, 0},
 	}
 	return nine
+}
+
+func space() [][]int {
+	space := [][]int{
+		{0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0},
+	}
+	return space
 }
