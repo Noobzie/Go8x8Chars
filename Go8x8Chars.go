@@ -58,57 +58,57 @@ func GetCharacter(char string) [][]int {
 	case "Z":
 		return cZ()
 	case "a":
-		return cA()
+		return sA()
 	case "b":
-		return cB()
+		return sB()
 	case "c":
-		return cC()
+		return sC()
 	case "d":
-		return cD()
+		return sD()
 	case "e":
-		return cE()
+		return sE()
 	case "f":
-		return cF()
+		return sF()
 	case "g":
-		return cG()
+		return sG()
 	case "h":
-		return cH()
+		return sH()
 	case "i":
-		return cI()
+		return sI()
 	case "j":
-		return cJ()
+		return sJ()
 	case "k":
-		return cK()
+		return sK()
 	case "l":
-		return cL()
+		return sL()
 	case "m":
-		return cM()
+		return sM()
 	case "n":
-		return cN()
+		return sN()
 	case "o":
-		return cO()
+		return sO()
 	case "p":
-		return cP()
+		return sP()
 	case "q":
-		return cQ()
+		return sQ()
 	case "r":
-		return cR()
+		return sR()
 	case "s":
-		return cS()
+		return sS()
 	case "t":
-		return cT()
+		return sT()
 	case "u":
-		return cU()
+		return sU()
 	case "v":
-		return cV()
+		return sV()
 	case "w":
-		return cW()
+		return sW()
 	case "x":
-		return cX()
+		return sX()
 	case "y":
-		return cY()
+		return sY()
 	case "z":
-		return cZ()
+		return sZ()
 	case "1":
 		return one()
 	case "2":
@@ -322,7 +322,7 @@ func cM() [][]int {
 		{1, 1, 0, 0, 0, 0, 1, 1},
 		{0, 1, 1, 0, 0, 1, 1, 0},
 		{0, 1, 0, 1, 1, 0, 1, 0},
-		{0, 1, 0, 1, 1, 0, 1, 0},
+		{0, 1, 0, 0, 0, 0, 1, 0},
 		{0, 1, 0, 0, 0, 0, 1, 0},
 		{0, 1, 0, 0, 0, 0, 1, 0},
 		{0, 1, 0, 0, 0, 0, 1, 0},
