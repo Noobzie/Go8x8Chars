@@ -85,7 +85,7 @@ func GetCharacter(char string) [][]int {
 // GetCharacterWithBorder return a character with on the right and bottom a line of 0's
 func GetCharacterWithBorder(char string) [][]int {
 	character := GetCharacter(char)
-	for i := 0; i < len(character[0]); i++ {
+	for i := 0; i < 8; i++ {
 		currentChar := character[i]
 		currentChar = append(currentChar, 0)
 		character[i] = currentChar
