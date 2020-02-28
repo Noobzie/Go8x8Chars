@@ -82,6 +82,15 @@ func GetCharacter(char string) [][]int {
 	}
 }
 
+// GetCharacterWithBorder return a character with on the right and bottom a line of 0's
+func GetCharacterWithBorder(char string) [][]int {
+	character := GetCharacter(char)
+	for i := 0; i < len(character[0]); i++ {
+		character[i] = append(character[i], 0)
+	}
+	return character
+}
+
 func cA() [][]int {
 	A := [][]int{
 		{0, 0, 0, 1, 1, 0, 0, 0},
