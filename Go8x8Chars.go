@@ -90,6 +90,8 @@ func GetCharacterWithBorder(char string) [][]int {
 		currentChar = append(currentChar, 0)
 		character[i] = currentChar
 	}
+	bottomRow := [][]int{{0, 0, 0, 0, 0, 0, 0, 0, 0}}
+	character = append(character, bottomRow...)
 	return character
 }
 
