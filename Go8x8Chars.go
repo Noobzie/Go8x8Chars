@@ -77,6 +77,8 @@ func GetCharacter(char string) [][]int {
 		return nine()
 	case "0":
 		return zero()
+	case "!":
+		return exclamation()
 	default:
 		return space()
 	}
