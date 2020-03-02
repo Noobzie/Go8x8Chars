@@ -135,6 +135,8 @@ func GetCharacter(char string) [][]int {
 		return questionMark()
 	case "-":
 		return dash()
+	case "#":
+		return hashtag()
 	default:
 		return space()
 	}
@@ -1022,7 +1024,7 @@ func nine() [][]int {
 }
 
 func exclamation() [][]int {
-	space := [][]int{
+	exclamation := [][]int{
 		{0, 0, 1, 0, 0, 0, 0, 0},
 		{0, 0, 1, 0, 0, 0, 0, 0},
 		{0, 0, 1, 0, 0, 0, 0, 0},
@@ -1032,11 +1034,11 @@ func exclamation() [][]int {
 		{0, 0, 0, 0, 0, 0, 0, 0},
 		{0, 0, 1, 0, 0, 0, 0, 0},
 	}
-	return space
+	return exclamation
 }
 
 func questionMark() [][]int {
-	space := [][]int{
+	questionMark := [][]int{
 		{0, 0, 1, 1, 0, 0, 0, 0},
 		{0, 1, 0, 0, 1, 0, 0, 0},
 		{0, 0, 0, 0, 1, 0, 0, 0},
@@ -1046,11 +1048,11 @@ func questionMark() [][]int {
 		{0, 0, 0, 0, 0, 0, 0, 0},
 		{0, 0, 1, 0, 0, 0, 0, 0},
 	}
-	return space
+	return questionMark
 }
 
 func dash() [][]int {
-	space := [][]int{
+	dash := [][]int{
 		{0, 0, 0, 0, 0, 0, 0, 0},
 		{0, 0, 0, 0, 0, 0, 0, 0},
 		{0, 0, 0, 0, 0, 0, 0, 0},
@@ -1060,7 +1062,21 @@ func dash() [][]int {
 		{0, 0, 0, 0, 0, 0, 0, 0},
 		{0, 0, 0, 0, 0, 0, 0, 0},
 	}
-	return space
+	return dash
+}
+
+func hashtag() [][]int {
+	hashtag := [][]int{
+		{0, 0, 1, 0, 0, 1, 0, 0},
+		{0, 0, 1, 0, 0, 1, 0, 0},
+		{1, 1, 1, 1, 1, 1, 1, 1},
+		{0, 0, 1, 0, 0, 1, 0, 0},
+		{0, 1, 0, 0, 1, 0, 0, 0},
+		{1, 1, 1, 1, 1, 1, 1, 0},
+		{0, 1, 0, 0, 1, 0, 0, 0},
+		{0, 1, 0, 0, 1, 0, 0, 0},
+	}
+	return hashtag
 }
 
 func space() [][]int {
