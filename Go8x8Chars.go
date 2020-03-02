@@ -131,6 +131,10 @@ func GetCharacter(char string) [][]int {
 		return zero()
 	case "!":
 		return exclamation()
+	case "?":
+		return questionMark()
+	case "-":
+		return dash()
 	default:
 		return space()
 	}
